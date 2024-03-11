@@ -1,1 +1,794 @@
-ggjjjgj
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Basic page needs
+    ============================================ -->
+    <title>Revo - Multipurpose Responsive HTML5 Template</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html5 template, best html5 template, best html template, html5 basic template, multipurpose html5 template, multipurpose html template, creative html templates, creative html5 templates" />
+    <meta name="description" content="Revo is a powerful Multi-purpose HTML5 Template with clean and user friendly design. It is definite a great starter for any eCommerce web project." />
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow" />
+   
+    <!-- Mobile specific metas
+    ============================================ -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- Favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'ico/favicon-16x16.png' %}"/>
+  
+   
+    <!-- Libs CSS
+    ============================================ -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/css/bootstrap.min.css' %}">
+    <link href="{% static 'css/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'js/datetimepicker/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+    <link href="{% static 'js/owl-carousel/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/themecss/lib.css' %}" rel="stylesheet">
+    <link href="{% static 'js/jquery-ui/jquery-ui.min.css' %}" rel="stylesheet">
+    <link href="{% static 'js/minicolors/miniColors.css' %}" rel="stylesheet">
+    
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="{% static 'css/themecss/so_searchpro.css' %}" rel="stylesheet">
+    <link href="{% static 'css/themecss/so_megamenu.css' %}" rel="stylesheet">
+    <link href="{% static 'css/themecss/so-categories.css' %}" rel="stylesheet">
+    <link href="{% static 'css/themecss/so-listing-tabs.css' %}" rel="stylesheet">
+    <link href="{% static 'css/themecss/so-newletter-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/themecss/slick.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/footer/footer1.css' %}" rel="stylesheet">
+    <link href="{% static 'css/header/header1.css' %}" rel="stylesheet">
+    <link id="color_scheme" href="{% static 'css/theme.css' %}" rel="stylesheet"> 
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+     <!-- Google web fonts
+    ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel='stylesheet' type='text/css'>
+    <style>
+        body{font-family:'Open Sans', sans-serif}
+        .font-ct, h1, h2, h3, 
+        .des_deal,
+        .item-time-w,
+        .item-time-w .name-time,
+        .static-menu a.main-menu, 
+        .container-megamenu.vertical .vertical-wrapper ul li > a strong, 
+        .container-megamenu.vertical .vertical-wrapper ul.megamenu li .sub-menu .content .static-menu .menu ul li a.main-menu, 
+        .horizontal ul.megamenu > li > a, .footertitle, 
+        .module h3.modtitle span, .breadcrumb li a, .item-title a, 
+        .best-seller-custom .item-info, .product-box-desc, .product_page_price .price-new, 
+        .list-group-item a, #menu ul.nav > li > a, .megamenuToogle-pattern, 
+        .right-block .caption h4, .price, .box-price {
+            font-family: Raleway, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="common-home res layout-1">
+    
+    <div id="wrapper" class="wrapper-fluid banners-effect-7">
+    
+    <!-- Header Container  -->
+    <header id="header" class=" typeheader-1">
+        
+
+        <!-- Header center -->
+        <div class="header-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="navbar-logo col-md-2 col-sm-3 col-xs-10">
+                        <div class="logo"><a href="index.html"><img src="{% static 'image/catalog/logo.png' %}" title="Your Store" alt="Your Store" /></a></div>
+                    </div>
+                    <!-- //end Logo -->
+
+                    <!-- Main menu -->
+                    <div class="header-center-right main-menu  col-md-10 col-sm-9 col-xs-2">
+                       <div class="megamenu-style-dev megamenu-dev">
+                            <div class="responsive so-megamenu megamenu-style-dev">
+                                <nav class="navbar-default">
+                                    <div class=" container-megamenu  horizontal open ">
+                                        <div class="navbar-header">
+                                            <button type="button" id="show-megamenu" data-toggle="collapse" class="navbar-toggle">
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="megamenu-wrapper">
+                                            <span id="remove-megamenu" class="fa fa-times"></span>
+                                            <div class="megamenu-pattern">
+                                                <div class="container-mega">
+                                                    <ul class="megamenu" data-transition="slide" data-animationtime="250">
+                                                        <li class="">
+                                                            <p class="close-menu"></p>
+                                                            <a href="blog-page.html" class="clearfix">
+                                                                <strong>ДОСТАВКА</strong>
+                                                                <span class="label"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="">
+                                                            <p class="close-menu"></p>
+                                                            <a href="blog-page.html" class="clearfix">
+                                                                <strong>ОПЛАТА</strong>
+                                                                <span class="label"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="">
+                                                            <p class="close-menu"></p>
+                                                            <a href="blog-page.html" class="clearfix">
+                                                                <strong>ГАРАНТИЯ</strong>
+                                                                <span class="label"></span>
+                                                            </a>
+                                                        </li>
+                                                
+                                                        </li>
+                                                        <li class="">
+                                                            <p class="close-menu"></p>
+                                                            <a href="blog-page.html" class="clearfix">
+                                                                <strong>ВОЗВРАТ</strong>
+                                                                <span class="label"></span>
+                                                            </a>
+                                                        </li>
+                                                    </li>
+                                                        <li class="">
+                                                            <p class="close-menu"></p>
+                                                            <a href="blog-page.html" class="clearfix">
+                                                                <strong>КОНТАКТЫ</strong>
+                                                                <span class="label"></span>
+                                                            </a>
+                                                        </li>
+                                                        
+                                                        
+                                                    </ul>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                       </div>  
+                       <div class="phone-header pull-right">
+                            <div class="telephone hidden-xs">
+                            <div class="contact-us">    
+                                <span class="text">call us now:</span> 
+                                <span class="phone">0123-444-666</span><br>  Email:<a href="mailto:contact@revo.com"> contact@revo.com</a> 
+                            </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <!-- //end Main menu -->
+                </div>
+            </div>
+        </div>
+        <!-- //Header center -->
+
+        <!-- Header Bottom -->
+        <div class="header-bottom hidden-compact">
+            <div class="container">
+                <div class="header-bottom-inner">
+                    <div class="row">
+                        <div class="header-bottom-left menu-vertical col-md-3 col-sm-2 col-xs-2">
+                            <div class="responsive so-megamenu megamenu-style-dev ">
+                                <div class="so-vertical-menu ">
+                                    <nav class="navbar-default">    
+                                        
+                                        <div class="container-megamenu vertical">
+                                            <div id="menuHeading">
+                                                <div class="megamenuToogle-wrapper">
+                                                    <div class="megamenuToogle-pattern">
+                                                        <div class="container">
+                                                            <div>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </div>
+                                                            <span class="title-mega">КАТАЛОГ</span>              
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         
+                                            <div class="navbar-header">
+                                                <button type="button" id="show-verticalmenu" data-toggle="collapse" class="navbar-toggle">
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+                                            <div class="vertical-wrapper">
+                                                <span id="remove-verticalmenu" class="fa fa-times"></span>
+                                                <div class="megamenu-pattern">
+                                                    <div class="container-mega">
+                                                        <ul class="megamenu">
+                                                            
+                                     
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                        <strong>ТОНОМЕТРЫ</strong>
+                                                                    </span>
+                                                                </a>  
+
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                        <strong>Ингаляторы/небулайзеры</strong>
+                                                                    </span>
+                                                                        
+                                                                    
+                                                                </a>
+                                                            </li>
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                    
+                                                                        <strong>ТЕРМОМЕТРЫ</strong>
+                                                                    </span>
+                                                                        
+                                                                    
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                    
+                                                                        <strong>ГЛЮКОМЕТРЫ</strong>
+                                                                    </span>
+                                                                        
+                                                                    
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                    
+                                                                        <strong>ТЕСТ-ПОЛОСКИ</strong>
+                                                                    </span>
+                                                                        
+                                                                    
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                     
+                                                                        <strong>ЛАНЦЕТЫ</strong>
+                                                                    </span>
+                                                                        
+                                                                    
+                                                                </a>
+                                                            </li>
+
+
+
+                                                            <li class="item-vertical  style1 with-sub-menu hover">
+                                                                <p class="close-menu"></p>
+                                                                
+                                                            <li class="item-vertical css-menu with-sub-menu hover">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                        <strong>КОСМЕТИКА</strong>
+                                                                    </span>
+                                                                        
+                                                                    <b class="fa fa-angle-right"></b>
+                                                                </a>
+                                                                <div class="sub-menu" data-subwidth="25">
+                                                                    <div class="content" >
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12">
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-12 hover-menu">
+                                                                                        <div class="menu">
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">20+</a>
+                                                                                                </li>
+                                                   
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">30+</a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">40+</a>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">50+</a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <span>
+                                                                        <strong>ДЕТСКАЯ КОСМЕТИКА</strong>
+                                                                    </span>
+                                                                        
+                                                                   
+                                                                </a>
+                                                            </li>
+                                                            
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="header-bottom-right col-md-9 col-sm-10 col-xs-10">
+                            <!-- Search -->
+                            <div class="header_search col-lg-6 col-md-8 col-sm-9 col-xs-4">
+                               
+                                <button id="dropdownSearch" class="dropdown-toggle bt-search hidden"><i class="fa fa-search" aria-hidden="true"></i></button>                         
+                                <div class="dropdown-menu dropdown-menu-search"> 
+                                    <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
+                                        <form method="GET" action="index.html">
+                                            <div id="search0" class="search input-group form-group">
+                                                
+
+                                                <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Поиск..." name="search">
+                                                <span class="input-group-btn">
+                                                <button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                            <input type="hidden" name="route" value="product/search" />
+                                        </form>
+                                    </div>
+                                </div>
+                                 
+                            </div>
+                            <!-- //end Search -->
+                            <!-- Secondary menu -->
+                            <div class="header-right col-lg-3 col-md-3 col-sm-3 col-xs-8 pull-right">
+                                
+                                <!--cart-->
+                                <div class="block-cart">
+                                    <div class="shopping_cart">
+                                        <div id="cart" class="btn-shopping-cart">
+
+                                            <a data-loading-text="Loading... " class="btn-group top_cart dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                                <div class="shopcart">
+                                                    <span class="icon-c hidden">
+                                            <i class="fa fa-shopping-bag"></i>
+                                          </span>
+                                                    <div class="shopcart-inner">
+                                                        <p class="text-shopping-cart hidden">
+
+                                                            My cart
+                                                        </p>
+
+                                                        <span class="total-shopping-cart cart-total-full">
+                                               <span class="items_cart">02</span><span class="items_cart2 hidden"> item(s)</span><span class="items_carts hidden"> - $162.00 </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu pull-right shoppingcart-box" role="menu">
+                                                <li>
+                                                    <table class="table table-striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center" style="width:70px">
+                                                                    <a href="product.html">
+                                                                        <img src="{% static 'image/catalog/demo/product/80/1.jpg' %}" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-left"> <a class="cart_product_name" href="product.html">Yutculpa ullamco</a> 
+                                                                </td>
+                                                                <td class="text-center">x1</td>
+                                                                <td class="text-center">$80.00</td>
+                                                                <td class="text-right">
+                                                                    <a href="product.html" class="fa fa-edit"></a>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center" style="width:70px">
+                                                                    <a href="product.html">
+                                                                        <img src="{% static 'image/catalog/demo/product/80/2.jpg' %}" style="width:70px" alt="Xancetta bresao" title="Xancetta bresao" class="preview">
+                                                                    </a>
+                                                                </td>
+                                                                <td class="text-left"> <a class="cart_product_name" href="product.html">Xancetta bresao</a> 
+                                                                </td>
+                                                                <td class="text-center">x1</td>
+                                                                <td class="text-center">$60.00</td>
+                                                                <td class="text-right">
+                                                                    <a href="product.html" class="fa fa-edit"></a>
+                                                                </td>
+                                                                <td class="text-right">
+                                                                    <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-left"><strong>Sub-Total</strong>
+                                                                    </td>
+                                                                    <td class="text-right">$140.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-left"><strong>Eco Tax (-2.00)</strong>
+                                                                    </td>
+                                                                    <td class="text-right">$2.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-left"><strong>VAT (20%)</strong>
+                                                                    </td>
+                                                                    <td class="text-right">$20.00</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-left"><strong>Total</strong>
+                                                                    </td>
+                                                                    <td class="text-right">$162.00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="text-center total-carts"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i>Корзина</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout</a> 
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--//cart-->
+                                <div class="header_custom_link">
+                                    <ul class="">
+                                        <li class="wishlist"><a href="wishlist.html" id="wishlist-total" class="top-link-wishlist" title="Избранное "><i class="fa fa-heart"></i></a>
+                                        </li>
+                                        <li class="compare"><a href="compare.html" class="top-link-compare" title="Войти"><i class="fa fa-refresh"></i></a>
+                                        </li>
+                                    </ul>  
+                                </div>   
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //Header Container  -->
+    
+       
+    <!-- Main Container  -->
+    <div class="main-container">
+        <div id="content">
+            <div class="slider-full">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 col-md-offset-3 block-slide">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 block-left">
+                                    <div class="module sohomepage-slider ">
+                                        <div class="yt-content-slider"  data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column0="1" data-items_column1="1" data-items_column2="1"  data-items_column3="1" data-items_column4="1" data-arrows="no" data-pagination="yes" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
+                                            <div class="yt-content-slide">
+                                                <a title="slide1" href="#"><img src="{% static 'image/catalog/demo/slideshow/home1/slide1.jpg' %}" alt="slide img" class="responsive"></a>
+                                            </div>
+                                            <div class="yt-content-slide">
+                                                <a title="slide2" href="#"><img src="{% static 'image/catalog/demo/slideshow/home1/slide2.jpg' %}" alt="slide img" class="responsive"></a>
+                                            </div>
+                                            <div class="yt-content-slide">
+                                                <a title="slide3" href="#"><img src="{% static 'image/catalog/demo/slideshow/home1/slide3.jpg' %}" alt="slide img" class="responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="loadeding"></div>
+                                    </div>  
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 block-right">
+                                    <div class="module">
+                                        <div class="block-image-1">
+                                            <ul class="static-image">
+                                                <li><a title="Static Image" href="#"><img src="{% static 'image/catalog/demo/banners/home1/1.jpg' %}" alt="Static Image"></a></li>
+                                                <li><a title="Static Image" href="#"><img src="{% static 'image/catalog/demo/banners/home1/2.jpg' %}" alt="Static Image"></a></li>
+                                                <li><a title="Static Image" href="#"><img src="{% static 'image/catalog/demo/banners/home1/3.jpg' %}" alt="Static Image"></a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                           
+            </div>
+            <div class="main-content">
+                <div class="container">
+                    <div class="block block_0">
+                        <div class="block-categories module">
+                            <h3 class="modtitle"><span>ПОПУЛЯРНЫЕ ТОВАРЫ НА СКИДКАХ</span></h3>
+                            <div class="yt-content-slider cate-content"  data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="30" data-items_column0="5" data-items_column1="4" data-items_column2="4"  data-items_column3="3" data-items_column4="2" data-arrows="no" data-pagination="yes" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
+                                <div class="cate cate1">
+                                    <div class="inner"><a href="#"><img src="{% static 'image/catalog/demo/banners/home1/cate1.jpg' %}" alt="Static Image"></a><a class="title-cate" href="#">Watches</a></div>
+                                </div>
+                                <div class="cate cate2">
+                                <div class="inner"><a href="#"><img src="{% static 'image/catalog/demo/banners/home1/cate2.jpg' %}" alt="Static Image"></a><a class="title-cate" href="#">Bags</a></div>
+                                </div>
+                                <div class="cate cate3">
+                                <div class="inner"><a href="#"><img src="{% static 'image/catalog/demo/banners/home1/cate3.jpg' %}" alt="Static Image"></a><a class="title-cate" href="#">Swimwears</a></div>
+                                </div>
+                                <div class="cate cate4">
+                                <div class="inner"><a href="#"><img src="{% static 'image/catalog/demo/banners/home1/cate4.jpg' %}" alt="Static Image"></a><a class="title-cate" href="#">Shoes</a></div>
+                                </div>
+                                <div class="cate cate5">
+                                <div class="inner"><a href="#"><img src="{% static 'image/catalog/demo/banners/home1/cate5.jpg' %}" alt="Static Image"></a><a class="title-cate" href="#">Fashion</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+       
+   
+
+    <!-- Footer Container -->
+    <footer class="footer-container typefooter-1">
+        <!-- Footer Top Container -->
+        <div class="footer-top">
+            <div class="container ftop">
+                <div class="module footer-services ">
+                    <div class="block-infos">
+                        <div class="info info1">
+                            <div class="inner">
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="info info2">
+                            <div class="inner">
+                                
+                            </div>
+                        </div>
+                        <div class="info info3">
+                            <div class="inner">
+                                
+                            </div>
+                        </div>
+                        <div class="info info4">
+                            <div class="inner">
+                                
+                            </div>
+                        </div>
+                        <div class="info info5">
+                            <div class="inner">
+                                
+                            </div>
+                        </div>
+                    </div>                                            
+                </div>
+            </div>
+        </div>
+        <!-- /Footer Top Container -->
+        
+        <div class="footer-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xxs-6 col-xs-12 col-style">
+                        <div class="module custom_link ">
+                            <div class="module clearfix">
+                                <h3 class="footertitle">О МАГАЗИНЕ</h3>
+                                <ul id="menu-our-shops" class="menu">
+                                    <li class="menu-product-support"><a class="item-link" href="#"><span class="menu-title">ДОСТАВКА</span></a></li>
+                                    <li class="menu-pc-setup-support"><a class="item-link" href="#"><span class="menu-title">ОПЛАТА</span></a></li>
+                                    <li class="menu-services"><a class="item-link" href="#"><span class="menu-title">ГАРАНТИЯ</span></a></li>
+                                    <li class="menu-extended-service-plans"><a class="item-link" href="#"><span class="menu-title">ВОЗВРАТ</span></a></li>
+                                    <li class="menu-extended-service-plans"><a class="item-link" href="#"><span class="menu-title">КОНТАКТЫ</span></a></li>
+                                </ul>
+                            </div>                                        
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xxs-6 col-xs-12 col_q1wn  col-style">
+                        <div class="module  ">
+                            <div class="footer-block">
+                                <div class="footer-block-title">
+                                    <h3 class="footertitle">My Account</h3>
+                                </div>
+                                <div class="footer-block-content">
+                                    <ul class="links-footer">
+                                        <li><a title="Account" href="my-account.html">My Account</a></li>
+                                        <li><a title="Checkout" href="checkout.html">Checkout</a></li>
+                                        <li><a title="History" href="order-history.html">Order History</a></li>
+                                        <li><a title="Help Center" href="#">Help Center</a></li>
+                                        <li><a title="Privacy Policy" href="#">Privacy Policy</a></li>      
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xxs-6 col-xs-12 col-style">
+                        <div class="box-information box-footer">
+                            <div class="module clearfix">
+                                <h3 class="footertitle">Support</h3>
+                                <div class="modcontent">
+                                    <ul class="menu">
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="#">Forums</a></li>
+                                        <li><a href="#">Faqs Center</a></li>
+                                        <li><a href="#">24/7 support</a></li>
+                                        <li><a href="#">Free tools</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xxs-6 col-xs-12 col-style">
+                        <div class="box-service box-footer">
+                            <div class="module clearfix">
+                                <h3 class="footertitle">Services</h3>
+                                <div class="modcontent">
+                                    <ul class="menu">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="gift-voucher.html">Gift Voucher</a></li>
+                                        <li><a href="order-history.html">Order History</a></li>
+                                        <li><a href="sitemap.html">Sitemap</a></li>
+                                        <li><a href="return.html">Return</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-style footer-contact">
+                        <div class="module">
+                            <div class="module footer-contact clearfix">
+                                <h3 class="footertitle">Contact Us</h3>
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i><span>Address : No 40 Baria Sreet 133/2 NewYork City,NY, United States</span></li>
+                                    <li class="email"><i class="fa fa-envelope-o"></i>Email : contact@revo.com</li>
+                                    <li><i class="fa fa-mobile"></i><span>Phone 1 : (+0123456789)</span><span>Phone 2 : (+0123456789)</span></li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-style">
+                        <div class="module custom_categories ">
+                            <div class="categories-footer">
+                                <div class="footer-cates-w">
+                                    <nav>
+                                        <a href="#">ТОНОМЕТРЫ</a>
+                                        <a href="#">ИНГАЛЯТОРЫ</a>
+                                        <a href="#">ГЛЮКОМЕТРЫ</a>
+                                        <a href="#">Electronics</a>
+                                        <a href="#">Accessories</a>
+                                        <a href="#">Laptop</a>
+                                        <a href="#">About us</a>
+                                        <a href="#">Help</a>
+                                    </nav>
+                    
+                                </div>      
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12 col-style footer-newsletter">
+                        <div class="module news-letter">
+                            <div class="so-custom-default newsletter">
+                                <div class="btn-group title-block">
+                                    <div class="header_search col-lg-6 col-md-8 col-sm-9 col-xs-4">
+                            
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div> <!--/.modcontent-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 col-style footer-socials-wrap">
+                        <div class="module">
+                            <div class="socials-wrap">
+                                <h3 class="title-follow footertitle">Follow Us</h3>
+                                <ul>
+                                    <li class="li-social facebook-social">
+                                    <a title="Facebook" href="http://www.facebook.com/MagenTech" target="_blank"> 
+                                    <span class="fa fa-facebook icon-social"></span><span class="name-social">Facebook</span> 
+                                    </a>
+                                    </li>
+
+                                    <li class="li-social twitter-social">
+                                    <a title="Twitter" href="https://twitter.com/magentech" target="_blank"> 
+                                    <span class="fa fa-twitter icon-social"></span> <span class="name-social">Twitter</span> 
+                                    </a>
+                                    </li>
+
+                                    <li class="li-social google-social">
+                                    <a title="Google+" href="https://plus.google.com/u/0/+Smartaddons" target="_blank"> 
+                                    <span class="fa fa-google-plus icon-social"></span> <span class="name-social">Google+</span> 
+                                    </a>
+                                    </li>
+
+                                    <li class="li-social linkedin-social">
+                                    <a title="Linkedin" href="#" target="_blank"> 
+                                    <span class="fa fa-linkedin icon-social"></span> <span class="name-social">Linkedin</span> 
+                                    </a>
+                                    </li>
+
+                                    <li class="li-social pinterest-social">
+                                    <a title="Pinterest" href="#" target="_blank"> 
+                                    <span class="fa fa-pinterest icon-social"></span> <span class="name-social">Pinterest</span> 
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <!--Back To Top-->
+        <div class="back-to-top"><i class="fa fa-angle-up"></i></div>
+    </footer>
+    <!-- //end Footer Container -->
+
+<!-- Include Libs & Plugins
+============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script  src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+<script  src="{% static 'js/bootstrap.min.js' %}"></script>
+<script  src="{% static 'js/owl-carousel/owl.carousel.js' %}"></script>
+<script  src="{% static 'js/themejs/libs.js' %}"></script>
+<script  src="{% static 'js/unveil/jquery.unveil.js' %}"></script>
+<script  src="{% static 'js/countdown/jquery.countdown.min.js' %}"></script>
+<script  src="{% static 'js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js' %}"></script>
+<script  src="{% static 'js/datetimepicker/moment.js' %}"></script>
+<script  src="{% static 'js/datetimepicker/bootstrap-datetimepicker.min.js' %}"></script>
+<script  src="{% static 'js/jquery-ui/jquery-ui.min.js' %}"></script>
+<script  src="{% static 'js/modernizr/modernizr-2.6.2.min.js' %}"></script>
+<script  src="{% static 'js/minicolors/jquery.miniColors.min.js' %}"></script>
+
+<!-- Theme files
+============================================ -->
+
+<script  src="{% static 'js/themejs/application.js' %}"></script>
+
+<script  src="{% static 'js/themejs/homepage.js' %}"></script>
+
+
+<script  src="{% static 'js/themejs/so_megamenu.js' %}"></script>
+<script  src="{% static 'js/themejs/addtocart.js' %}"></script>  
+<script  src="{% static 'js/themejs/cpanel.js' %}"></script>
+
+
+
+</body>
+</html>
